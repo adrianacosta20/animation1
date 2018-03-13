@@ -1,0 +1,12 @@
+{
+  "name": "animation",
+  "version": "1.0.0",
+  "description": "animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "reload -b --port 8000"
+  },
+  "author": "Adrian Acosta",
+  "license": "ISC"
+}

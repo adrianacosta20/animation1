@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    background: url('../img/forest.jpg') 0 0 repeat-x;
+    width:100%;
+    height: 100%;
+    animation: background 12s linear infinite
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.guy{
+bottom: -680px;
+margin: 0;
+    position: relative;
+    /* margin: 0 auto; */
+    z-index: 10;
+    background: url('../img/guy.png') 0 0 no-repeat;
+    width: 180px;
+    height: 247.5px;
+    background-size:900px 495px;
+    animation: guyRun 1000ms steps(5) infinite; 
+
+
+}
+
+.cat{
+    bottom: -680px;
+    margin: 0;
+        position: relative;
+        z-index: 10;
+        background: url('../img/runningcat.png') 0 0 no-repeat;
+        width: 512px;
+        height: 256px;
+        background-size:1024px 1024px;
+        animation: catRun 1000ms steps(2) infinite; 
+    
+    
+    }
+
+@keyframes background{
+ from{   background-position: 0 0 ;}
+
+to {
+    background-position: -1920px 0;}
+}
+
+@keyframes guyRun{
+0%{background-position:0 0 }
+50%{background-position:-900px 0 }
+50.00001%{background-position:0 -247.5px}
+100%{background-position:-900px -247.5px}
+}
+  
+@keyframes catRun {
+    0%{background-position:0 0 }
+    25%{background-position:-1024px 0}
+    25.00001%{background-position:0 -256px}
+    50%{background-position:-1024px -256px}
+    50.00001%{background-position:0 -512px}
+    75%{background-position:-1024px -512px}
+    75.00001%{background-position:0 -768px}
+    100%{background-position:-1024px -768px}
+}
